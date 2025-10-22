@@ -95,34 +95,61 @@ section h2::after {
 /* === UTS LINKS === */
 #uts ul {
   list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
   padding: 0;
 }
 
 #uts li {
   background: #FFFFFF;
-  padding: 18px 25px;
-  border-radius: 15px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  transition: all 0.3s ease;
+  padding: 25px 20px;
+  border-radius: 18px;
+  text-align: center;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.1);
+  transition: all 0.35s ease;
+  border: 2px solid transparent;
 }
 
 #uts li a {
   text-decoration: none;
   color: #0C3C01;
   font-weight: 600;
+  font-size: 1.05em;
+  display: block;
 }
 
 #uts li:hover {
-  background-color: #A2A382;
+  transform: translateY(-6px);
+  background: linear-gradient(135deg, #A2A382 0%, #C8C9A7 100%);
+  border-color: #8C8D6E;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
 }
 
 #uts li:hover a {
   color: #FFFFFF;
+}
+
+#uts li::after {
+  content: "→";
+  color: #A2A382;
+  margin-left: 8px;
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+#uts li:hover::after {
+  opacity: 1;
+  transform: translateX(5px);
+}
+
+/* Responsif untuk mobile */
+@media (max-width: 768px) {
+  #uts ul {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
 }
 
 /* === FOOTER === */
@@ -161,3 +188,4 @@ footer {
     align-items: center;
   }
 }
+
