@@ -18,142 +18,110 @@ header {
   background: linear-gradient(120deg, #0C3C01, #586D49);
   color: #F1F2ED;
   text-align: center;
-  padding: 80px 20px 60px;
+  padding: 60px 20px 40px; /* dikurangi */
   border-bottom-left-radius: 60px;
   border-bottom-right-radius: 60px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
 
 header h1 {
-  font-size: 2.5em;
+  font-size: 2.3em; /* dikurangi */
   font-weight: 700;
   letter-spacing: 1px;
 }
 
 header p {
-  font-size: 1.1em;
+  font-size: 1em; /* dikurangi */
   opacity: 0.9;
-  margin-top: 10px;
+  margin-top: 8px;
 }
 
 header img {
-  width: 180px;
-  aspect-ratio: 1 / 1;
+  width: 140px; /* dikurangi */
+  height: 140px;
   object-fit: cover;
   border-radius: 50%;
-  margin-top: 25px;
+  margin-top: 20px;
   border: 4px solid #A2A382;
   box-shadow: 0 6px 18px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
 
 /* === SECTION === */
 section {
-  padding: 60px 12%;
+  padding: 40px 10%; /* dikurangi */
 }
 
 section h2 {
   text-align: center;
-  font-size: 1.9em;
-  margin-bottom: 25px;
+  font-size: 1.8em; /* dikurangi */
+  margin-bottom: 20px; /* dikurangi */
   color: #0C3C01;
-  position: relative;
   font-weight: 600;
+  position: relative;
 }
 
 section h2::after {
   content: '';
-  width: 70px;
+  width: 60px;
   height: 4px;
   background: #A2A382;
   display: block;
-  margin: 12px auto 0;
+  margin: 10px auto 0;
   border-radius: 3px;
 }
 
-/* === ABOUT === */
-#about p {
+/* === ABOUT / CONTENT BOX === */
+#about p,
+.poem {
   text-align: justify;
   background: #FFFFFF;
-  padding: 30px;
-  border-radius: 24px;
-  box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+  padding: 20px; /* dikurangi */
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
   transition: transform 0.3s ease;
+  line-height: 1.7;
 }
 
-#about p:hover {
+#about p:hover,
+.poem:hover {
   transform: scale(1.01);
 }
 
-/* === SKILLS === */
-#skills ul {
+/* khusus puisi */
+.poem .line { margin-bottom: 6px; }
+.poem .stanza { margin-bottom: 12px; }
+
+/* === UTS LINKS === */
+#uts ul {
   list-style: none;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-  gap: 20px;
-  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px; /* dikurangi */
+  margin-top: 16px;
 }
 
-#skills li {
+#uts li {
   background: #FFFFFF;
-  padding: 20px;
-  border-radius: 20px;
-  text-align: center;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 14px 22px; /* dikurangi */
+  border-radius: 15px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
   transition: all 0.3s ease;
 }
 
-#skills li:hover {
-  background-color: #A2A382;
-  color: #FFFFFF;
-  transform: translateY(-6px);
-}
-
-/* === PROJECTS === */
-.project {
-  background: #FFFFFF;
-  padding: 25px;
-  border-radius: 20px;
-  margin-bottom: 25px;
-  box-shadow: 0 4px 14px rgba(0,0,0,0.1);
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.project:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
-}
-
-.project h3 {
-  color: #0C3C01;
-  margin-bottom: 12px;
-}
-
-.project a {
+#uts li a {
   text-decoration: none;
-  color: #586D49;
+  color: #0C3C01;
   font-weight: 600;
 }
 
-.project a:hover {
-  color: #0C3C01;
-  text-decoration: underline;
+#uts li:hover {
+  background-color: #A2A382;
 }
 
-/* === CONTACT === */
-#contact p {
-  text-align: center;
-  margin: 10px 0;
-}
-
-#contact a {
-  color: #0C3C01;
-  text-decoration: none;
-  font-weight: 500;
-}
-
-#contact a:hover {
-  color: #586D49;
+#uts li:hover a {
+  color: #FFFFFF;
 }
 
 /* === FOOTER === */
@@ -161,29 +129,14 @@ footer {
   text-align: center;
   background: #121D00;
   color: #F1F2ED;
-  padding: 25px;
+  padding: 20px; /* dikurangi */
   font-size: 0.95em;
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
-  margin-top: 50px;
+  margin-top: 40px; /* dikurangi */
 }
 
 /* === RESPONSIVE === */
 @media (max-width: 768px) {
   section {
-    padding: 40px 8%;
-  }
-
-  header h1 {
-    font-size: 2em;
-  }
-
-  header p {
-    font-size: 1em;
-  }
-
-  header img {
-    width: 130px;
-    height: 130px;
-  }
-}
+    padding: 25px 6%;
