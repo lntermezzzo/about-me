@@ -1,0 +1,38 @@
+name: Deploy UTS branches to Pages
+
+on:
+  push:
+    branches:
+      - UTS-1
+      - UTS-2
+      - UTS-3
+      - UTS-4
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout branch
+        uses: actions/checkout@v3
+
+      - name: Copy files to main branch folder
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          
+          # Ambil nama branch (UTS-1, UTS-2, dst)
+          BRANCH_NAME=${GITHUB_REF##*/}
+          
+          # Buat folder di main branch
+          git fetch origin main
+          git checkout main
+          mkdir -p $BRANCH_NAME
+          
+          # Copy semua file dari branch saat ini ke folder baru
+          rsync -av --exclude='.git' . ../temp
+          rsync -av ../temp/ ./$BRANCH_NAME/
+          
+          # Commit & push
+          git add $BRANCH_NAME
+          git commit -m "Update $BRANCH_NAME for Pages"
+          git push origin main
