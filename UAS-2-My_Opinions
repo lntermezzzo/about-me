@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UAS-2 — My Opinions | Ahmad Rizal Fahmi</title>
+  <link rel="stylesheet" href="../style.css" />
+  <style>
+    .opinion {
+      max-width: 900px;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 36px;
+      border-radius: 24px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+      line-height: 1.9;
+    }
+
+    .opinion h2 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .opinion p {
+      margin-bottom: 22px;
+      text-align: justify;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>My Opinions</h1>
+    <p>UAS-2 – Komunikasi Interpersonal dan Publik</p>
+    <img src="../profile.jpg" alt="Foto Profil Ahmad Rizal Fahmi" />
+  </header>
+
+  <section id="uas-2">
+    <div class="opinion">
+      <h2>Opini tentang Peran Sistem Informasi dan AI dalam Menghadapi Kemiskinan Global</h2>
+
+      <p>
+        Opini saya berangkat dari keyakinan bahwa kemiskinan global bukan hanya persoalan kekurangan sumber daya, tetapi juga persoalan pemahaman dan koordinasi manusia. Data tentang kemiskinan tersedia dan terus diperbarui, namun tanpa sistem yang mampu menjernihkan makna di balik data tersebut, keputusan yang diambil sering kali tidak menyentuh akar persoalan. Dalam konteks ini, Artificial Intelligence dan sistem informasi memiliki peran strategis jika diarahkan untuk memperkuat pemahaman manusia, bukan sekadar efisiensi teknis.
+      </p>
+
+      <p>
+        Dari sudut pandang pribadi, saya berpendapat bahwa AI seharusnya tidak hanya digunakan untuk mengidentifikasi siapa yang miskin, tetapi juga untuk merekomendasikan dukungan yang layak dan bermartabat. Sistem harus mampu membaca konteks lokal dan pengalaman manusia agar bantuan tidak bersifat seragam. Dari sudut pandang yang lebih umum, sistem ini perlu bersifat transparan dan akuntabel kepada publik, sehingga kepercayaan sosial dapat tumbuh dan intervensi menjadi tepat sasaran.
+      </p>
+
+      <p>
+        Saya menyadari bahwa opini yang baik harus siap berubah ketika informasi baru muncul. Jika penggunaan AI dalam penanganan kemiskinan terbukti memperkuat bias wilayah atau mengabaikan nilai komunitas lokal, maka pendekatan tersebut perlu dikoreksi. Bagi saya, kekuatan opini tidak terletak pada kekakuannya, melainkan pada kesediaannya untuk disesuaikan demi nilai kemanusiaan yang lebih luas.
+      </p>
+
+      <p>
+        Menghadapi perbedaan pendapat berarti meletakkan berbagai sudut pandang berdampingan dan berupaya memahami dasar perbedaannya. Dalam konteks kemiskinan global, dialog antara teknolog, pemerintah, organisasi sosial, dan masyarakat terdampak harus dibangun secara terbuka. Jika rekonsiliasi tidak selalu mungkin, setidaknya ada kesepakatan untuk berbeda secara sadar dan bertanggung jawab.
+      </p>
+
+      <p>
+        Sikap yang saya hindari adalah merasa paling benar secara intelektual atau terlalu rasional hingga tidak berani mengambil keputusan. Sikap yang saya pilih adalah opini yang tegas namun rendah hati. Saya memandang opini seperti masakan rumahan, di mana bahan utamanya adalah data dan nilai, dimasak dengan pengalaman, dan selalu terbuka untuk diperbaiki ketika kondisi serta pemahaman bersama berubah.
+      </p>
+
+      <p>
+        Dengan demikian, opini saya konsisten dengan konsep Sistem Penjernih Makna yang saya ajukan. Keduanya berangkat dari tujuan yang sama, yaitu memberdayakan manusia untuk memahami kemiskinan global secara bersama sebelum bertindak. Dalam kerangka ini, teknologi berfungsi sebagai jembatan antara data dan kemanusiaan, bukan sebagai pengganti tanggung jawab moral manusia.
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 | Ahmad Rizal Fahmi – 18224085 | Sistem dan Teknologi Informasi – ITB</p>
+  </footer>
+</body>
+</html>
