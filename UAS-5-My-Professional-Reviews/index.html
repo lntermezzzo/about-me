@@ -17,15 +17,52 @@
     }
     .review h2 {
       text-align: center;
-      margin-bottom: 30px;
+      margin-bottom: 22px;
     }
     .review p {
-      margin-bottom: 22px;
+      margin-bottom: 16px;
       text-align: justify;
     }
-    .review a {
-      font-weight: 600;
+    .review a { font-weight: 600; }
+
+    /* TABEL RINGKAS */
+    .table-wrap { overflow-x: auto; margin: 18px 0 10px; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: #ffffff;
+      border-radius: 16px;
+      overflow: hidden;
     }
+    thead th {
+      background: #0C3C01;
+      color: #F1F2ED;
+      text-align: left;
+      padding: 12px 14px;
+      font-weight: 700;
+      font-size: 0.95em;
+    }
+    tbody td {
+      padding: 12px 14px;
+      border-top: 1px solid rgba(0,0,0,0.08);
+      font-size: 0.95em;
+    }
+    tbody tr:hover { background: rgba(162, 163, 130, 0.15); }
+
+    .note {
+      font-size: 0.95em;
+      color: #586D49;
+      margin-top: 6px;
+    }
+
+    .divider {
+      margin: 26px 0;
+      border: none;
+      height: 1px;
+      background: rgba(0,0,0,0.12);
+    }
+
+    .center { text-align: center; }
   </style>
 </head>
 
@@ -37,52 +74,88 @@
 
   <section id="uas-5">
     <div class="review">
-      <h2>Professional Review atas Portofolio UAS</h2>
+      <h2>Ringkasan Penilaian Portofolio UAS</h2>
 
       <p>
-        Bagian ini menyajikan penilaian profesional terhadap seluruh rangkaian tugas UAS,
-        yang mencakup konsep, opini, inovasi, dan pengetahuan. Proses evaluasi dilakukan
-        melalui dua pendekatan yang saling melengkapi, yaitu self-assessment dengan bantuan
-        Artificial Intelligence dan peer assessment yang dilakukan secara manual.
+        Bagian ini merangkum hasil penilaian portofolio UAS saya. Penilaian saya lakukan dari dua sisi:
+        (1) evaluasi mandiri untuk mengecek konsistensi rubrik dan kerapian isi, dan
+        (2) peer assessment untuk mendapatkan sudut pandang manusia yang lebih kontekstual.
       </p>
 
       <p>
-        Pada self-assessment, saya memanfaatkan AI sebagai alat bantu reflektif untuk menilai
-        konsistensi isi, keselarasan dengan rubrik, serta keterhubungan antarbagian UAS.
-        AI digunakan untuk membaca keseluruhan portofolio secara sistematis, memberikan
-        umpan balik awal, dan membantu mengidentifikasi area yang perlu diperkuat sebelum
-        karya dikumpulkan.
+        Berikut rekap nilai akhir per bagian UAS (diambil dari kolom <b>Rata2</b> pada lembar penilaian).
       </p>
 
-      <p>
-        Peer assessment dilakukan secara manual oleh rekan sejawat untuk menghadirkan
-        sudut pandang manusia yang kontekstual. Penilaian ini menekankan aspek kejelasan
-        komunikasi, empati, dan keterbacaan narasi yang tidak selalu dapat sepenuhnya
-        ditangkap oleh sistem otomatis.
+      <div class="table-wrap">
+        <table aria-label="Rekap Nilai UAS">
+          <thead>
+            <tr>
+              <th>Bagian</th>
+              <th>Skor Rata-rata</th>
+              <th>Catatan Singkat</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>UAS-1 — My Concepts</td>
+              <td><b><!-- isi -->4.75</b></td>
+              <td>Konsep jelas dan temanya konsisten.</td>
+            </tr>
+            <tr>
+              <td>UAS-2 — My Opinions</td>
+              <td><b><!-- isi -->4.65</b></td>
+              <td>Argumen cukup kuat dan runtut.</td>
+            </tr>
+            <tr>
+              <td>UAS-3 — My Innovations</td>
+              <td><b><!-- isi -->4.60</b></td>
+              <td>Ide inovasi relevan, tinggal dipadatkan.</td>
+            </tr>
+            <tr>
+              <td>UAS-4 — My Knowledge</td>
+              <td><b><!-- isi -->4.70</b></td>
+              <td>Struktur pengetahuan rapi dan aplikatif.</td>
+            </tr>
+            <tr>
+              <td>UAS-5 — My Professional Reviews</td>
+              <td><b><!-- isi -->4.65</b></td>
+              <td>Rekap jelas dan transparan.</td>
+            </tr>
+            <tr>
+              <td><b>Rata-rata Keseluruhan</b></td>
+              <td><b><!-- hitung manual -->4.67</b></td>
+              <td><b>Rata-rata dari semua skor rata-rata di atas.</b></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p class="note">
+        Catatan: angka pada tabel di atas mengikuti kolom <b>Rata2</b> di masing-masing lembar UAS. Jika ada revisi nilai,
+        cukup ubah angka di tabel ini agar tetap sesuai.
       </p>
 
-      <p>
-        Dengan membandingkan hasil penilaian AI dan penilaian manual, saya memperoleh
-        evaluasi yang lebih berimbang. AI membantu menjaga objektivitas dan konsistensi
-        terhadap rubrik, sementara peer assessment memastikan bahwa nilai, rasa, dan makna
-        komunikasi tetap menjadi bagian penting dalam penilaian profesional.
-      </p>
-
-      <p>
-        Seluruh hasil penilaian dihimpun dalam dokumen daring untuk menjamin transparansi
-        dan kemudahan akses. Dokumen tersebut merepresentasikan proses refleksi profesional
-        atas kualitas karya UAS yang telah disusun.
-      </p>
-
-      <p style="text-align:center;">
+      <p class="center" style="margin-top: 18px;">
         <a href="https://docs.google.com/spreadsheets/d/1drYJfoQ7Jm6J1gL7S2Ofgc-RCwAKBMvQ/edit?usp=sharing"
            target="_blank" rel="noopener noreferrer">
-          Lihat Lembar Self-Assessment UAS (AI)
+          Lihat Lembar Self-Assessment (AI)
         </a>
-        <br /><br />
+      </p>
+
+      <hr class="divider" />
+
+      <h2>Peer Assessment</h2>
+
+      <p>
+        Selain evaluasi mandiri, saya juga melampirkan hasil peer assessment yang dikerjakan secara manual.
+        Bagian ini saya gunakan untuk membandingkan sudut pandang penilai lain dan melihat apakah pesan yang saya tulis
+        terbaca dengan jelas oleh pembaca.
+      </p>
+
+      <p class="center">
         <a href="https://docs.google.com/spreadsheets/d/1iptdN24BYelFML_WX_IXqEzjh5_mjoEN/edit?usp=sharing"
            target="_blank" rel="noopener noreferrer">
-          Lihat Lembar Peer Assessment UAS (Manual)
+          Lihat Lembar Peer Assessment (Manual)
         </a>
       </p>
     </div>
